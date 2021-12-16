@@ -1,3 +1,39 @@
+/* Variables */
+:root {
+  --xl: 2.8rem;
+  --lg: 1.6rem;
+  --md: 1.4rem;
+  --sm: 1.1rem;
+  --bg-app: #fcfcfc;
+  --white: #ffffff;
+  --gray-light: #eaeaea;
+  --text-dark: #343434;
+  --text-medium: #606060;
+  --text-light: #a7a7a7;
+  --border-dark: #2e2e2e;
+  --border-medium: #979797;
+  --border-light: #d6d6d6;
+  --app-color-dark: #ae304f;
+  --app-color-medium: #af4a6c;
+  --app-color-light: #d9adbb;
+  --blue-social: #425a94;
+  --border-radius-lg: 6px;
+  --border-radius-md: 4px;
+  --border-radius-sm: 2px;
+}
+
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Open Sans', sans-serif;
+}
+
 body {
-  color: red;
+  background-color: var(--bg-app);
 }
