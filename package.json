@@ -1,0 +1,27 @@
+{
+  "name": "the-beer-of-tomorrow",
+  "version": "1.0.0",
+  "description": "Technical test to Time Jobs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mxrold/the-beer-of-tomorrow.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "react",
+    "react-router",
+    "webpack",
+    "babel"
+  ],
+  "author": "Martin Roldan <martinroldan889@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mxrold/the-beer-of-tomorrow/issues"
+  },
+  "homepage": "https://github.com/mxrold/the-beer-of-tomorrow#readme"
+}
