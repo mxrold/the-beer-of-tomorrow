@@ -1,0 +1,15 @@
+.AboutUsLinks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  margin-top: 26px;
+}
+
+@media (min-width: 769px) {
+  .AboutUsLinks {
+    order: 1;
+    width: max-content;
+    margin-top: 0;
+  }
+}

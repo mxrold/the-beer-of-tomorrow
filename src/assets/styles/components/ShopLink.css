@@ -1,0 +1,48 @@
+.ShopLink { }
+
+.ShopLink a {
+  position: relative;
+  padding: 6px;
+  border: 1px solid var(--app-color-medium);
+  border-radius: var(--border-radius-sm);
+}
+
+.ShopLink a svg {
+  width: 20px;
+  height: 20px;
+  color: var(--app-color-dark);
+  vertical-align: middle;
+}
+
+.ShopLink a span {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  display: grid;
+  place-items: center;
+  width: 20px;
+  height: 20px;
+  font-size: var(--sm);
+  font-weight: 600;
+  text-align: center;
+  background-color: var(--app-color-medium);
+  color: var(--text-light);
+  border: 1px solid var(--app-color-dark);
+  border-radius: 20px;
+}
+
+@media (min-width: 769px) {
+  .ShopLink {
+    order: 5;
+    width: max-content;
+  }
+
+  .ShopLink a {
+    padding: 13.5px;
+  }
+
+  .ShopLink a svg {
+    width: 24px;
+    height: 24px;
+  }
+}

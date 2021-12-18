@@ -6,10 +6,10 @@
   --sm: 1.1rem;
   --bg-app: #fcfcfc;
   --white: #ffffff;
-  --gray-light: #eaeaea;
+  --gray-light: #f1f0f0;
   --text-dark: #343434;
   --text-medium: #606060;
-  --text-light: #a7a7a7;
+  --text-light: #ececec;
   --border-dark: #2e2e2e;
   --border-medium: #979797;
   --border-light: #d6d6d6;
@@ -36,4 +36,47 @@ html {
 
 body {
   background-color: var(--bg-app);
+}
+
+h1 {
+  font-size: var(--xl);
+  color: var(--text-dark);
+}
+
+h2 {
+  font-size: var(--lg);
+  color: var(--text-dark);
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* Global classes */
+.container-width {
+  width: 100%;
+  max-width: 1440px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container-padding {
+  padding: 0 15px;
+}
+
+/* Global queries */
+@media (min-width: 769px) {
+  .container-padding {
+    padding: 0 45px;
+  }
+}
+
+@media (min-width: 1020px) {
+  .container-padding {
+    padding: 0 90px;
+  }
 }

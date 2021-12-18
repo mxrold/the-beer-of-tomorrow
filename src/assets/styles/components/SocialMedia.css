@@ -1,0 +1,29 @@
+.SocialMedia {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  margin-top: 26px;
+}
+
+.SocialMedia a {
+  display: flex;
+  align-items: center;
+  color: var(--text-medium);
+}
+
+.SocialMedia a svg {
+  color: var(--blue-social);
+}
+
+@media (min-width: 769px) {
+  .SocialMedia {
+    order: 2;
+    width: max-content;
+    margin-top: 0;
+  }
+
+  .SocialMedia a:first-child {
+    margin-right: 30px;
+  }
+}

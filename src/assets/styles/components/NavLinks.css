@@ -1,0 +1,35 @@
+.NavLinks {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  height: max-content;
+  margin-top: 30px;
+}
+
+.NavLinks span {
+  display: none;
+}
+
+@media (min-width: 769px) {
+  .NavLinks {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    border-top: 1px solid var(--border-light);
+  }
+  
+  .NavLinks span {
+    display: block;
+  }
+
+  .NavLinks span svg {
+    color: var(--app-color-medium);
+  }
+
+  .NavLinks span:last-child {
+    display: none;
+  }
+}

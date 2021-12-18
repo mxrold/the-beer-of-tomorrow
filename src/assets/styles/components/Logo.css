@@ -1,0 +1,15 @@
+.Logo a {
+  display: flex;
+  align-items: center;
+}
+
+.Logo span {
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+@media (min-width: 769px) {
+  .Logo {
+    order: 3;
+  }
+}

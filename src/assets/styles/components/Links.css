@@ -1,0 +1,24 @@
+.Links {
+  font-size: var(--md);
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--text-medium);
+}
+
+.Links__large {
+  margin-top: 13px;
+}
+
+.active {
+  color: var(--app-color-dark) !important;
+}
+
+@media (min-width: 769px) {
+  .Links__large {
+    margin-top: 0;
+  }
+
+  .Links__short:first-child {
+    margin-right: 30px;
+  }
+}

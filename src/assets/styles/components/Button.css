@@ -1,0 +1,41 @@
+.Button {
+  width: max-content;
+  height: 45px;
+  margin: 26px 0;
+}
+
+.Button__item {
+  display: grid;
+  place-items: center;
+  height: 100%;
+  padding: 3px 9px;
+  font-size: var(--md);
+  font-weight: 500;
+  border-radius: var(--border-radius-sm);
+  border: none;
+  cursor: pointer;
+}
+
+.Button__item--primary {
+  background-color: var(--app-color-dark);
+  color: var(--gray-light);
+}
+
+.Button__item--primary:hover {
+  background-color: var(--app-color-medium);
+}
+
+.Button__item--secondary {
+  color: var(--app-color-dark);
+}
+
+.Button__item--secondary:hover {
+  color: var(--app-color-medium);
+}
+
+@media (min-width: 769px) {
+  .Button {
+    order: 4;
+    margin: 0;
+  }
+}
