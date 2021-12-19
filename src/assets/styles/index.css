@@ -68,10 +68,20 @@ li {
   padding: 0 15px;
 }
 
+.container-margin {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
 /* Global queries */
 @media (min-width: 769px) {
   .container-padding {
     padding: 0 45px;
+  }
+
+  .container-margin {
+    margin-top: 60px;
+    margin-bottom: 60px;
   }
 }
 

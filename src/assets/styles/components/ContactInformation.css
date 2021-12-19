@@ -1,0 +1,39 @@
+.ContactInformation {
+  width: 100%;
+}
+
+.ContactInformation__item {
+  margin-bottom: 26px;
+}
+
+.ContactInformation__item--title {
+  display: flex;
+  align-items: center;
+}
+
+.ContactInformation__item--title span {
+  margin-right: 12px;
+}
+
+.ContactInformation__item--title span svg {
+  color: var(--app-color-dark);
+}
+
+.ContactInformation__item--title h3 { 
+  font-size: var(--lg);
+  font-weight: 500;
+  color: var(--text-dark);
+}
+
+.ContactInformation__item--data {
+  margin-left: 36px;
+  font-size: var(--md);
+  font-weight: 400;
+  color: var(--text-medium);
+}
+
+@media (min-width: 769px) {
+  .ContactInformation {
+    width: 45%;
+  }
+}
