@@ -1,8 +1,8 @@
 import { FaInstagram, FaFacebookF } from 'react-icons/fa'
 import '../assets/styles/components/SocialMedia.css'
 
-const SocialMedia = ({ showText = false, showTitle = false}) => {
-  const ICON_SIZE = '24px';
+const SocialMedia = ({ showText = false, showTitle = false }) => {
+  const ICON_SIZE = '24px'
   const data = [
     {
       text: 'Instagram',

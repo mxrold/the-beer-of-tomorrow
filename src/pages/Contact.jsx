@@ -4,9 +4,9 @@ import '../assets/styles/pages/Contact.css'
 
 const Contact = () => {
   return (
-    <section className="Contact container-padding container-margin">
+    <section className='Contact container-padding container-margin'>
       <h1>Contact us</h1>
-      <div className="Contact__information container-width">
+      <div className='Contact__information container-width'>
         <ContactInformation />
         <GoogleMaps />
       </div>

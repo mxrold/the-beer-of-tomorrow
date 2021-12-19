@@ -3,8 +3,8 @@ import '../assets/styles/components/Button.css'
 
 const Button = ({ text = '', type = 'primary' }) => {
   return (
-    <div className="Button">
-      <Link to ="#" className={`Button__item Button__item--${type}`}>
+    <div className='Button'>
+      <Link to='#' className={`Button__item Button__item--${type}`}>
         {text}
       </Link>
     </div>

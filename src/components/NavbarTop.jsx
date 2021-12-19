@@ -7,11 +7,11 @@ import '../assets/styles/components/NavbarTop.css'
 
 const NavbarTop = () => {
   return (
-    <div className="NavbarTop">
-      <Logo showText={true} iconSize={'45px'} titleSize={'2.25rem'} />
+    <div className='NavbarTop'>
+      <Logo showText iconSize='45px' titleSize='2.25rem' />
       <AboutUsLinks />
       <SocialMedia />
-      <Button text={'Become a distributor'} />
+      <Button text='Become a distributor' />
       <ShopLink />
     </div>
   )

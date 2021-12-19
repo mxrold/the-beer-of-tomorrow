@@ -10,11 +10,11 @@ const Header = () => {
   const ICON_SIZE = '24px'
 
   return (
-    <header className="Header container-padding">
-      <div className="Header__container container-width">
-        <div className="Header__container--mobile">
-          <button className="Header__container--mobile-button" onClick={() => setIsActive(!isActive)}> 
-            { isActive ? <AiOutlineClose size={ICON_SIZE} /> : <AiOutlineMenu size={ICON_SIZE} /> }
+    <header className='Header container-padding'>
+      <div className='Header__container container-width'>
+        <div className='Header__container--mobile'>
+          <button className='Header__container--mobile-button' onClick={() => setIsActive(!isActive)}>
+            {isActive ? <AiOutlineClose size={ICON_SIZE} /> : <AiOutlineMenu size={ICON_SIZE} />}
           </button>
           <Logo iconSize='35px' />
           <ShopLink />

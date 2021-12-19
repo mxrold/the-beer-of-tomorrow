@@ -24,15 +24,15 @@ const ContactInformation = () => {
   ]
 
   return (
-    <div className="ContactInformation">
+    <div className='ContactInformation'>
       {
         data.map(item => (
-          <article className="ContactInformation__item" key={item.text}>
-            <div className="ContactInformation__item--title">
+          <article className='ContactInformation__item' key={item.text}>
+            <div className='ContactInformation__item--title'>
               <span>{item.icon}</span>
               <h3>{item.title}</h3>
             </div>
-            <p className="ContactInformation__item--data">{item.text}</p>
+            <p className='ContactInformation__item--data'>{item.text}</p>
           </article>
         ))
       }

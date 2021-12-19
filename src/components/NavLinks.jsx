@@ -38,7 +38,7 @@ const NavLinks = ({ showTitle = false }) => {
         data.map(item => (
           <>
             <Links type='large' {...item} />
-            <span> <BsFillDiamondFill size={ICON_SIZE} /> </span> 
+            <span> <BsFillDiamondFill size={ICON_SIZE} /> </span>
           </>
         ))
       }

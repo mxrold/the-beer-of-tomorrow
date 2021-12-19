@@ -3,7 +3,7 @@ import '../assets/styles/components/NavbarBottom.css'
 
 const NavbarBottom = () => {
   return (
-    <div className="NavbarBottom">
+    <div className='NavbarBottom'>
       <NavLinks />
     </div>
   )

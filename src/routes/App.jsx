@@ -1,8 +1,9 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
-import { Home, 
-  Checkout, 
-  NotFound, 
-  DrinkItem, 
+import {
+  Home,
+  Checkout,
+  NotFound,
+  DrinkItem,
   Contact,
   Blog,
   HowToBuy,
@@ -31,7 +32,7 @@ const App = () => {
           <Route exact path='/shipping' element={<Shipping />} />
           <Route exact path='/about-us' element={<AboutUs />} />
           <Route path='*' element={<NotFound />} />
-          <Route path='/shop/' element={<Navigate to="/" />}/>
+          <Route path='/shop/' element={<Navigate to='/' />} />
         </Routes>
       </Layout>
     </BrowserRouter>
