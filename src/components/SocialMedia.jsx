@@ -1,7 +1,7 @@
 import { FaInstagram, FaFacebookF } from 'react-icons/fa'
 import '../assets/styles/components/SocialMedia.css'
 
-const SocialMedia = ({ showText = false, showTitle = false }) => {
+const SocialMedia = ({ showText = false }) => {
   const ICON_SIZE = '24px'
   const data = [
     {
@@ -20,7 +20,6 @@ const SocialMedia = ({ showText = false, showTitle = false }) => {
 
   return (
     <div className='SocialMedia'>
-      {showTitle && <h2>Social media</h2>}
       {
         data.map(item => (
           <a href={item.url} key={item.text} title={item.text} target={item.target}>

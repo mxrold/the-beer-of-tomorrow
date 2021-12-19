@@ -1,12 +1,9 @@
 .Links {
+  margin-top: 13px;
   font-size: var(--md);
   font-weight: 600;
   text-transform: uppercase;
   color: var(--text-medium);
-}
-
-.Links__large {
-  margin-top: 13px;
 }
 
 .active {
@@ -14,11 +11,11 @@
 }
 
 @media (min-width: 769px) {
-  .Links__large {
+  .Links {
     margin-top: 0;
   }
 
-  .Links__short:first-child {
-    margin-right: 30px;
+  .Links:first-child {
+    margin-right: 13px;
   }
 }

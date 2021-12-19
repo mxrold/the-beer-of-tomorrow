@@ -18,7 +18,7 @@ const AboutUsLinks = ({ showTitle = false }) => {
       {showTitle && <h2>About us</h2>}
       {
         data.map(item => (
-          <Links type='short' {...item} />
+          <Links {...item} />
         ))
       }
     </nav>

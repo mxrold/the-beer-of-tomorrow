@@ -3,21 +3,24 @@
   justify-content: space-between;
   align-items: center;
   width: 50%;
-  margin-top: 26px;
+  margin: 26px auto 0 auto;
 }
 
 .SocialMedia a {
   display: flex;
   align-items: center;
+  font-size: var(--md);
   color: var(--text-medium);
 }
 
 .SocialMedia a svg {
+  margin-right: 9px;
   color: var(--blue-social);
 }
 
 @media (min-width: 769px) {
   .SocialMedia {
+    justify-content: flex-end;
     order: 2;
     width: max-content;
     margin-top: 0;

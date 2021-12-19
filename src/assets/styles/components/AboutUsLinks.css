@@ -1,15 +1,28 @@
 .AboutUsLinks {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
-  width: 70%;
-  margin-top: 26px;
+  width: 100%;
+  height: max-content;
+  margin-top: 30px;
+}
+
+.AboutUsLinks h2 {
+  text-align: center;
 }
 
 @media (min-width: 769px) {
   .AboutUsLinks {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;    
     order: 1;
     width: max-content;
     margin-top: 0;
+  }
+
+  .AboutUsLinks h2 {
+    text-align: start;
   }
 }

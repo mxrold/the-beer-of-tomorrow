@@ -1,6 +1,15 @@
+import FooterTop from './FooterTop'
+import FooterBottom from './FooterBottom'
+import '../assets/styles/components/Footer.css'
+
 const Footer = () => {
   return (
-    <h1>Footer</h1>
+    <footer className='Footer container-padding'>
+      <div className='Footer__container container-width'>
+        <FooterTop />
+        <FooterBottom />
+      </div>
+    </footer>
   )
 }
 

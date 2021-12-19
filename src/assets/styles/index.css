@@ -47,6 +47,10 @@ h1 {
 }
 
 h2 {
+  display: block;
+  width: 100%;
+  margin-top: 12px;
+  margin-bottom: 12px;
   font-size: var(--lg);
   color: var(--text-dark);
 }
