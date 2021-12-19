@@ -1,6 +1,12 @@
+import Button from '../components/Button'
+import '../assets/styles/pages/NotFound.css'
+
 const NotFound = () => {
   return (
-    <h1>NotFound</h1>
+    <section className="NotFound container-padding container-margin">
+      <h1>Oops! We couldn't find this page 🤯</h1>
+      <Button path='/' text='Go back' type='primary' />
+    </section>
   )
 }
 

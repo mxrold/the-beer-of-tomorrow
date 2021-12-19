@@ -1,10 +1,10 @@
 import { Link } from 'react-router-dom'
 import '../assets/styles/components/Button.css'
 
-const Button = ({ text = '', type = 'primary' }) => {
+const Button = ({ path = '#', text = '', type = 'primary' }) => {
   return (
     <div className='Button'>
-      <Link to='#' className={`Button__item Button__item--${type}`}>
+      <Link to={path} className={`Button__item Button__item--${type}`}>
         {text}
       </Link>
     </div>
