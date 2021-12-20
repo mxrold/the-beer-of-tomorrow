@@ -1,7 +1,11 @@
-const Filters = () => {
+import Search from './Search'
+import '../assets/styles/components/Filters.css'
+
+const Filters = ({ onChange, query }) => {
   return (
     <section className='Filters'>
-      Filters
+      <h2>Filters</h2>
+      <Search onChange={onChange} query={query} />  
     </section>
   )
 }
