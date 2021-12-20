@@ -6,7 +6,7 @@ const Drinks = ({ data }) => {
     <section className='Drinks'>
       {
         data.map(item => (
-          <DrinksItem {...item} key={item.id} />
+          <DrinksItem item={item} key={item.id} />
         ))
       }
     </section>

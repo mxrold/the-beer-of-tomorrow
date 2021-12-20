@@ -1,17 +1,17 @@
 import BasketButton from './BasketButton'
 import '../assets/styles/components/DrinksItem.css'
 
-const DrinksItem = ({ id, name, image_url, abv }) => {
+const DrinksItem = ({ item }) => {
   return (
     <article className='DrinksItem'>
-      <h3 className='DrinksItem__name'>{name}</h3>
+      <h3 className='DrinksItem__name'>{item.name}</h3>
       <figure className='DrinksItem__image'>
-        <img src={image_url} alt={name} loading='lazy' />
+        <img src={item.image_url} alt={item.name} loading='lazy' />
       </figure>
-      <p className='DrinksItem__price'>${abv}</p>
+      <p className='DrinksItem__price'>${item.abv}</p>
       <span className='DrinksItem__layout' />
-      <BasketButton />
-      <a className='DrinksItem__link' href={`/shop-${id}`} title={name} />
+      <BasketButton id={item.id} name={item.name} item={item} />
+      <a className='DrinksItem__link' href={`/shop-${item.id}`} title={item.name} />
     </article>
   )
 }
