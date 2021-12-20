@@ -6,6 +6,10 @@ export const useGetData = (url = '', countPages = 0) => {
   const [loading, setLoading] = useState(false)
 
   useEffect(() => {
+    getData(url, true)
+  }, [url])
+
+  useEffect(() => {
     getData(url, false)
   }, [countPages])
 

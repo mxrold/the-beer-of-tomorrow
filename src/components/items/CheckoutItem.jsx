@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import BasketButton from '../global/BasketButton'
 import ToggleItem from '../global/ToggleItem'
 import '../../assets/styles/components/items/CheckoutItem.css'
@@ -13,7 +14,9 @@ const CheckoutItem = ({ data }) => {
                 <img src={item.image_url} alt={item.name} title={item.name} loading="lazy" />
               </figure>
               <div className="CheckoutItem__data--text"> 
-                <h2>{item.name}</h2>
+                <Link to={`/shop-${item.id}`}>
+                  <h2>{item.name}</h2>
+                </Link>
                 <p>${item.abv}</p>
               </div>
             </div>
