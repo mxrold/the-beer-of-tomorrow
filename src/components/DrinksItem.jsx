@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import BasketButton from './BasketButton'
 import '../assets/styles/components/DrinksItem.css'
 
@@ -11,7 +12,7 @@ const DrinksItem = ({ id, name, image_url, abv }) => {
       <p className="DrinksItem__price">${abv}</p>
       <span className="DrinksItem__layout"></span>
       <BasketButton />
-      <a className="DrinksItem__link" href={`/shop/${id}`} title={name}></a>
+      <Link className="DrinksItem__link" to={`/shop-${id}`} title={name}></Link>
     </article>
   )
 }

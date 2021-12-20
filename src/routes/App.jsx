@@ -3,7 +3,7 @@ import {
   Home,
   Checkout,
   NotFound,
-  DrinkItem,
+  DrinkDetails,
   Contact,
   Blog,
   HowToBuy,
@@ -22,7 +22,7 @@ const App = () => {
         <Routes>
           <Route exact path='/' element={<Home />} />
           <Route exact path='/checkout' element={<Checkout />} />
-          <Route exact path='/shop/:id' element={<DrinkItem />} />
+          <Route exact path='/shop-:id' element={<DrinkDetails />} />
           <Route exact path='/contact' element={<Contact />} />
           <Route exact path='/blog' element={<Blog />} />
           <Route exact path='/how-to-buy' element={<HowToBuy />} />

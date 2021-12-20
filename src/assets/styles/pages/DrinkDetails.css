@@ -1,0 +1,119 @@
+.DrinkDetails {
+  width: 100%;
+  height: max-content;
+}
+
+.DrinkDetails__container {
+
+}
+
+.DrinkDetails__container p,
+.DrinkDetails__container li {
+  font-size: var(--md);
+  font-weight: 400;
+  color: var(--text-medium);
+}
+
+.DrinkDetails__container h3 {
+  margin-bottom: 13px;
+  font-size: var(--lg);
+  font-weight: 500;
+}
+
+.DrinkDetails__container--item {
+  
+}
+
+.DrinkDetails__container--item-data {
+  width: 100%;
+}
+
+.DrinkDetails__container--item-data h3 {
+  color: var(--text-dark);
+}
+
+.DrinkDetails__container--item-data-list {
+  display: grid;
+  grid-template: auto / repeat(2, 1fr);
+  margin-bottom: 26px;
+}
+
+.DrinkDetails__container--item-data-list li {
+  margin-bottom: 13px;
+  margin-left: 22px;
+}
+
+.DrinkDetails__container--item-image {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 26px;
+  background-color: var(--gray-light);
+  background-image: url('../../static/background-drinks.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
+  border-radius: var(--border-radius-lg);
+}
+
+.DrinkDetails__container--item-image figure {
+  width: 20%;
+  min-width: 100px;
+  max-width: 120px;
+}
+
+.DrinkDetails__container--item-image figure img {
+  width: 100%;
+  height: 100%;
+}
+
+.DrinkDetails__container--description {
+  max-width: 700px;
+  margin-top: 40px;
+}
+
+.DrinkDetails__container--description-text {
+  margin-bottom: 26px;
+}
+
+.DrinkDetails__container--description-text h3 {
+  color: var(--app-color-dark);
+}
+
+@media (min-width: 480px) {
+  .DrinkDetails__container--item-image {
+    background-size: 60%;
+  }
+}
+
+@media (min-width: 769px) {
+  .DrinkDetails__container--item {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .DrinkDetails__container--item-data {
+    width: 45%;
+  }
+
+  .DrinkDetails__container--item-image {
+    position: relative;
+    width: 45%;
+    padding: 0;
+    background-size: 40%;
+  }
+
+  .DrinkDetails__container--item-image figure {
+    position: absolute;
+    top: -40px;
+  }
+
+  .DrinkDetails__container--description {
+    margin-top: 80px;
+  }
+}
+@media (min-width: 1020px) {
+  .DrinkDetails__container--item-image {
+    background-size: 50%;
+  }
+}

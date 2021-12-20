@@ -1,7 +1,7 @@
 export { default as Home } from './Home'
 export { default as Checkout } from './Checkout'
 export { default as NotFound } from './NotFound'
-export { default as DrinkItem } from './DrinkItem'
+export { default as DrinkDetails } from './DrinkDetails'
 export { default as Contact } from './Contact'
 export { default as Blog } from './Blog'
 export { default as HowToBuy } from './HowToBuy'
