@@ -1,5 +1,5 @@
-import ContactInformation from '../components/ContactInformation'
-import GoogleMaps from '../components/GoogleMaps'
+import ContactInformation from '../components/contact/ContactInformation'
+import GoogleMaps from '../components/global/GoogleMaps'
 import '../assets/styles/pages/Contact.css'
 
 const Contact = () => {

@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom'
 import { useGetData } from '../hooks/useGetData'
-import DrinksRelated from '../components/DrinksRelated'
-import LoadingError from '../components/LoadingError'
+import DrinksRelated from '../components/items/DrinksRelated'
+import LoadingError from '../components/global/LoadingError'
 import { GiHops } from 'react-icons/gi'
 import '../assets/styles/pages/DrinkDetails.css'
 

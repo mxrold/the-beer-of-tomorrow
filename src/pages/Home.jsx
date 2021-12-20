@@ -3,11 +3,11 @@ import { useInfinityScroll } from '../hooks/useInfinityScroll'
 import { useSearch } from '../hooks/useSearch'
 /* Fake data */
 // import { data } from '../initialState'
-import Filters from '../components/Filters'
-import Drinks from '../components/Drinks'
-import Loader from '../components/Loader'
-import LoadingError from '../components/LoadingError'
-import ButtonHome from '../components/ButtonHome'
+import Filters from '../components/filters/Filters'
+import Drinks from '../components/items/Drinks'
+import Loader from '../components/global/Loader'
+import LoadingError from '../components/global/LoadingError'
+import ButtonHome from '../components/global/ButtonHome'
 import '../assets/styles/pages/Home.css'
 
 const Home = () => {

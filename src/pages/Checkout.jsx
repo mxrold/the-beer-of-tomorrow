@@ -2,8 +2,8 @@ import { useGetDataLocalStorage } from '../hooks/useGetDataLocalStorage'
 /* Fake data */
 // import { data } from '../initialState'
 import { sumTotal } from '../utils/sumTotal'
-import CheckoutItem from '../components/CheckoutItem'
-import Button from '../components/Button'
+import CheckoutItem from '../components/items/CheckoutItem'
+import Button from '../components/global/Button'
 import '../assets/styles/pages/Checkout.css'
 
 const Checkout = () => {
