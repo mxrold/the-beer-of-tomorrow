@@ -4,6 +4,7 @@ import { useInfinityScroll } from '../hooks/useInfinityScroll'
 // import { data } from '../initialState'
 import Filters from '../components/Filters'
 import Drinks from '../components/Drinks'
+import Loader from '../components/Loader'
 import '../assets/styles/pages/Home.css'
 
 const Home = () => {
@@ -16,10 +17,12 @@ const Home = () => {
       <h1>Featured products</h1>
       <div className="Home__container container-width">
         <Filters />
-        {loading && <h2>...Loading</h2>}
-        <Drinks data={data} />   
+        <div className="Home__container--data">
+          <Drinks data={data} />   
+          <div className='Observer' ref={ref} />
+          <Loader items={6} loading={loading} />
+        </div>
       </div>
-      <div className='Observer' ref={ref} />
     </main>
   )
 }

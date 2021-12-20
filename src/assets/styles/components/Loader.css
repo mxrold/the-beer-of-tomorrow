@@ -1,0 +1,17 @@
+.Loader { 
+  margin-top: 40px;
+}
+
+.Loader__item {
+  width: 100%;
+  height: 400px;
+  background-color: var(--gray-light);
+  border: none;
+}
+
+.Loader__item--color {
+  width: 10%;
+  height: 100%;
+  background-color: var(--light-gray);
+}
+
