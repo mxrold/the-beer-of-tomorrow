@@ -1,13 +1,13 @@
 import { useState, useEffect } from 'react'
 
-export const useGetData = (url = '') => {
+export const useGetData = (url = '', countPages = 0) => {
   const [data, setData] = useState([])
   const [error, setError] = useState(false)
   const [loading, setLoading] = useState(false)
 
   useEffect(() => {
-    getData(url, true)
-  }, [])
+    getData(url, false)
+  }, [countPages])
 
   const getData = async (value, firstCall) => {
     try {

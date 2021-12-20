@@ -1,4 +1,5 @@
 import { useGetData } from '../hooks/useGetData'
+import { useInfinityScroll } from '../hooks/useInfinityScroll'
 /* Fake data */
 // import { data } from '../initialState'
 import Filters from '../components/Filters'
@@ -6,8 +7,9 @@ import Drinks from '../components/Drinks'
 import '../assets/styles/pages/Home.css'
 
 const Home = () => {
-  const url = 'https://api.punkapi.com/v2/beers?page=1&per_page=12'
-  const { data, error, loading } = useGetData(url)
+  const { countPages, ref } = useInfinityScroll()
+  const url = `https://api.punkapi.com/v2/beers?page=${countPages}&per_page=12`
+  const { data, error, loading } = useGetData(url, countPages)
 
   return (
     <main className="Home container-padding container-margin"> 
@@ -17,6 +19,7 @@ const Home = () => {
         {loading && <h2>...Loading</h2>}
         <Drinks data={data} />   
       </div>
+      <div className='Observer' ref={ref} />
     </main>
   )
 }
