@@ -16,12 +16,12 @@ const Home = () => {
   const { data, error, loading } = useGetData(url, countPages)
 
   return (
-    <main id={idPath} className="Home container-padding container-margin"> 
+    <main id={idPath} className='Home container-padding container-margin'>
       <h1>Featured products</h1>
-      <div className="Home__container container-width">
+      <div className='Home__container container-width'>
         <Filters />
-        <div className="Home__container--data">
-          <Drinks data={data} />   
+        <div className='Home__container--data'>
+          <Drinks data={data} />
           <div className='Observer' ref={ref} />
           <ButtonHome path={idPath} countPages={countPages} />
           <LoadingError error={error} />
@@ -31,5 +31,5 @@ const Home = () => {
     </main>
   )
 }
- 
+
 export default Home

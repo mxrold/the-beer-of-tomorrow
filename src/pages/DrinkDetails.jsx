@@ -1,5 +1,6 @@
 import { useParams } from 'react-router-dom'
 import { useGetData } from '../hooks/useGetData'
+import DrinksRelated from '../components/DrinksRelated'
 import LoadingError from '../components/LoadingError'
 import { GiHops } from 'react-icons/gi'
 import '../assets/styles/pages/DrinkDetails.css'
@@ -15,46 +16,47 @@ const DrinkDetails = () => {
       return list.map((item, index) => (
         <li key={`${item.name}-${index}`}>{item.name}</li>
       ))
-    } 
-    return <li></li>
+    }
+    return <li />
   }
 
   if (loading) return <h2>...Loading</h2>
   if (error) return <LoadingError error={error} />
 
   return (
-    <section className="DrinkDetails container-padding container-margin">
+    <section className='DrinkDetails container-padding container-margin'>
       {
-        !loading && item !== undefined && 
-        <div className="DrinkDetails__container container-width">
-          <div className="DrinkDetails__container--item">
-            <div className="DrinkDetails__container--item-data">
-              <p>{item.tagline}</p>
-              <h1>{item.name}</h1>
-              <h3><GiHops size='18px' color='#ae304f' /> Ingredients</h3>
-              <ul className="DrinkDetails__container--item-data-list">
-                {handleList(item.ingredients.malt)}
-                {handleList(item.ingredients.hops)}
-              </ul>
+        !loading && item !== undefined &&
+          <div className='DrinkDetails__container container-width'>
+            <div className='DrinkDetails__container--item'>
+              <div className='DrinkDetails__container--item-data'>
+                <p>{item.tagline}</p>
+                <h1>{item.name}</h1>
+                <h3><GiHops size='18px' color='#ae304f' /> Ingredients</h3>
+                <ul className='DrinkDetails__container--item-data-list'>
+                  {handleList(item.ingredients.malt)}
+                  {handleList(item.ingredients.hops)}
+                </ul>
+              </div>
+              <div className='DrinkDetails__container--item-image'>
+                <figure>
+                  <img src={item.image_url} alt={item.name} title={item.name} loading='lazy' />
+                </figure>
+              </div>
             </div>
-            <div className="DrinkDetails__container--item-image">
-              <figure>
-                <img src={item.image_url} alt={item.name} title={item.name} loading="lazy" />
-              </figure>
+            <div className='DrinkDetails__container--description'>
+              <div className='DrinkDetails__container--description-text'>
+                <h3>Description</h3>
+                <p>{item.description}</p>
+              </div>
+              <div className='DrinkDetails__container--description-text'>
+                <h3>Brewer tips</h3>
+                <p>{item.brewers_tips}</p>
+              </div>
             </div>
           </div>
-          <div className="DrinkDetails__container--description">
-            <div className="DrinkDetails__container--description-text">
-              <h3>Description</h3>
-              <p>{item.description}</p>
-            </div>
-            <div className="DrinkDetails__container--description-text">
-              <h3>Brewer tips</h3>
-              <p>{item.brewers_tips}</p>
-            </div>
-          </div>
-        </div>
       }
+      <DrinksRelated />
     </section>
   )
 }

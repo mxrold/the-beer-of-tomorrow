@@ -1,6 +1,6 @@
 const Filters = () => {
   return (
-    <section className="Filters">
+    <section className='Filters'>
       Filters
     </section>
   )

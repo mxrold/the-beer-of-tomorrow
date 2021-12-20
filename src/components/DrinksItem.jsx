@@ -1,18 +1,17 @@
-import { Link } from 'react-router-dom'
 import BasketButton from './BasketButton'
 import '../assets/styles/components/DrinksItem.css'
 
 const DrinksItem = ({ id, name, image_url, abv }) => {
   return (
-    <article className="DrinksItem">
-      <h3 className="DrinksItem__name">{name}</h3>
-      <figure className="DrinksItem__image">
-        <img src={image_url} alt={name} loading="lazy" />
+    <article className='DrinksItem'>
+      <h3 className='DrinksItem__name'>{name}</h3>
+      <figure className='DrinksItem__image'>
+        <img src={image_url} alt={name} loading='lazy' />
       </figure>
-      <p className="DrinksItem__price">${abv}</p>
-      <span className="DrinksItem__layout"></span>
+      <p className='DrinksItem__price'>${abv}</p>
+      <span className='DrinksItem__layout' />
       <BasketButton />
-      <Link className="DrinksItem__link" to={`/shop-${id}`} title={name}></Link>
+      <a className='DrinksItem__link' href={`/shop-${id}`} title={name} />
     </article>
   )
 }

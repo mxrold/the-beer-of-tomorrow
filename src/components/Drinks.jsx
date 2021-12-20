@@ -3,7 +3,7 @@ import '../assets/styles/components/Drinks.css'
 
 const Drinks = ({ data }) => {
   return (
-    <section className="Drinks">
+    <section className='Drinks'>
       {
         data.map(item => (
           <DrinksItem {...item} key={item.id} />

@@ -5,9 +5,9 @@ import '../assets/styles/components/BasketButton.css'
 const BasketButton = () => {
   const [isActive, setIsActive] = useState(false)
   const ICON_SIZE = '24px'
-  
+
   return (
-    <button 
+    <button
       className={`BasketButton ${isActive ? 'BasketButton__remove' : 'BasketButton__add'}`}
       onClick={() => setIsActive(!isActive)}
     >

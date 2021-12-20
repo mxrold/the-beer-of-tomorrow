@@ -16,16 +16,16 @@ const Loader = ({ items, loading }) => {
 
   return (
     <>
-      
-        <div className='Loader Drinks container-width'>
-          {
+
+      <div className='Loader Drinks container-width'>
+        {
           cards.map((item, index) => (
             <div className='Loader__item' key={index}>
               <div className='Loader__item--color' />
             </div>
           ))
           }
-        </div>
+      </div>
     </>
   )
 }
