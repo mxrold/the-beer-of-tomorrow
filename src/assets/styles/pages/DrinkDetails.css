@@ -10,9 +10,11 @@
   font-size: var(--md);
   font-weight: 400;
   color: var(--text-medium);
+  list-style: circle !important;
 }
 
 .DrinkDetails__container h3 {
+  margin-top: 13px;
   margin-bottom: 13px;
   font-size: var(--lg);
   font-weight: 500;
@@ -101,7 +103,7 @@
 
   .DrinkDetails__container--item-image figure {
     position: absolute;
-    top: -40px;
+    top: -20px;
   }
 
   .DrinkDetails__container--description {

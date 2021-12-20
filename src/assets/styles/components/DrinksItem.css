@@ -3,6 +3,10 @@
   display: grid;
   place-items: center;
   padding: 44px 26px;
+  background-image: url('../../static/background-drinks.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;
   border: 1px solid var(--border-light);
   border-radius: var(--border-radius-lg);
 }

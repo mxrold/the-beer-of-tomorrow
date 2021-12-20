@@ -30,8 +30,8 @@ const DrinkDetails = () => {
           <div className='DrinkDetails__container container-width'>
             <div className='DrinkDetails__container--item'>
               <div className='DrinkDetails__container--item-data'>
-                <p>{item.tagline}</p>
                 <h1>{item.name}</h1>
+                <p>{item.tagline}</p>
                 <h3><GiHops size='18px' color='#ae304f' /> Ingredients</h3>
                 <ul className='DrinkDetails__container--item-data-list'>
                   {handleList(item.ingredients.malt)}
