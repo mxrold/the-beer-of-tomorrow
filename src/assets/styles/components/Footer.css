@@ -7,3 +7,13 @@
 .Footer__container {
   padding: 65px 0;
 }
+
+.FooterBottom__copyright {
+  width: 100%;
+  padding: 12px 0;
+  font-size: var(--sm);
+  font-weight: 500;
+  text-align: center;
+  background-color: var(--app-color-medium);
+  color: var(--text-light);
+}
