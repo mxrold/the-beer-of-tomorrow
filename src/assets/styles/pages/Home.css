@@ -1,0 +1,13 @@
+.Home { }
+
+.Home__container {
+  display: grid;
+  grid-template: repeat(2, auto) / 1fr;
+  grid-gap: 26px;
+}
+
+@media (min-width: 1020px) {
+  .Home__container {
+    grid-template:  1fr / .25fr .75fr;
+  }
+}

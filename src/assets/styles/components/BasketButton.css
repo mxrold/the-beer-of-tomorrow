@@ -1,0 +1,18 @@
+.BasketButton {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+}
+
+.BasketButton__add {
+  background-color: var(--gray-light);
+  color: var(--app-color-dark);
+}
+
+.BasketButton__remove {
+  display: block !important;
+  background-color: var(--app-color-dark);
+  color: var(--gray-light);
+}
