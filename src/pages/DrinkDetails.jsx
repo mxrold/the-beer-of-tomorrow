@@ -1,6 +1,7 @@
 import { useParams } from 'react-router-dom'
 import { useGetData } from '../hooks/useGetData'
 import DrinksRelated from '../components/items/DrinksRelated'
+import BasketButton from '../components/global/BasketButton'
 import LoaderSecondary from '../components/global/LoaderSecondary'
 import LoadingError from '../components/global/LoadingError'
 import { GiHops } from 'react-icons/gi'
@@ -38,6 +39,10 @@ const DrinkDetails = () => {
                   {handleList(item.ingredients.malt)}
                   {handleList(item.ingredients.hops)}
                 </ul>
+                <div className='DrinkDetails__container--item-data-actions'>
+                  <p><span>Price:</span> ${item.abv}</p>
+                  <BasketButton name={item.name} id={item.id} item={item} />
+                </div>
               </div>
               <div className='DrinkDetails__container--item-image'>
                 <figure>

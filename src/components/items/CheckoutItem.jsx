@@ -20,7 +20,7 @@ const CheckoutItem = ({ data }) => {
                 <p>${item.abv}</p>
               </div>
             </div>
-            <ToggleItem />
+            <ToggleItem name={item.name} id={item.id} item={item} />
             <div className="CheckoutItem__price">
               <p>${item.abv}</p>
             </div>
