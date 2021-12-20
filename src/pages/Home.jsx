@@ -5,6 +5,7 @@ import { useInfinityScroll } from '../hooks/useInfinityScroll'
 import Filters from '../components/Filters'
 import Drinks from '../components/Drinks'
 import Loader from '../components/Loader'
+import LoadingError from '../components/LoadingError'
 import '../assets/styles/pages/Home.css'
 
 const Home = () => {
@@ -20,6 +21,7 @@ const Home = () => {
         <div className="Home__container--data">
           <Drinks data={data} />   
           <div className='Observer' ref={ref} />
+          <LoadingError error={error} />
           <Loader items={6} loading={loading} />
         </div>
       </div>
