@@ -16,7 +16,6 @@ const Loader = ({ items, loading }) => {
 
   return (
     <>
-
       <div className='Loader Drinks container-width'>
         {
           cards.map((item, index) => (

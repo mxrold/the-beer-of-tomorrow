@@ -1,6 +1,7 @@
 import { useParams } from 'react-router-dom'
 import { useGetData } from '../hooks/useGetData'
 import DrinksRelated from '../components/items/DrinksRelated'
+import LoaderSecondary from '../components/global/LoaderSecondary'
 import LoadingError from '../components/global/LoadingError'
 import { GiHops } from 'react-icons/gi'
 import '../assets/styles/pages/DrinkDetails.css'
@@ -20,7 +21,7 @@ const DrinkDetails = () => {
     return <li />
   }
 
-  if (loading) return <h2>...Loading</h2>
+  if (loading) return <LoaderSecondary />
   if (error) return <LoadingError error={error} />
 
   return (
