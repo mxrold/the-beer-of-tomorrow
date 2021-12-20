@@ -11,7 +11,8 @@ import {
   Payment,
   Refunds,
   Shipping,
-  AboutUs
+  AboutUs,
+  Purchase
 } from '../pages'
 import Layout from '../components/Layout'
 
@@ -31,6 +32,7 @@ const App = () => {
           <Route exact path='/refunds' element={<Refunds />} />
           <Route exact path='/shipping' element={<Shipping />} />
           <Route exact path='/about-us' element={<AboutUs />} />
+          <Route exact path='/purchase' element={<Purchase />} />
           <Route path='*' element={<NotFound />} />
           <Route path='/shop/' element={<Navigate to='/' />} />
         </Routes>

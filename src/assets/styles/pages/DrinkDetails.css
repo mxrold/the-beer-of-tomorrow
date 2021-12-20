@@ -3,9 +3,7 @@
   height: max-content;
 }
 
-.DrinkDetails__container {
-
-}
+.DrinkDetails__container { }
 
 .DrinkDetails__container p,
 .DrinkDetails__container li {
@@ -20,9 +18,7 @@
   font-weight: 500;
 }
 
-.DrinkDetails__container--item {
-  
-}
+.DrinkDetails__container--item { }
 
 .DrinkDetails__container--item-data {
   width: 100%;

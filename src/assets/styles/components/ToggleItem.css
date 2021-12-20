@@ -1,0 +1,26 @@
+.ToggleItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 150px;
+  height: 40px;
+  padding: 4px 18px;
+  background-color: var(--gray-light);
+  box-shadow: 0 0 2px 0 var(--border-light);
+  border-radius: 50px;
+}
+
+.ToggleItem span {
+  font-size: var(--md);
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.ToggleItem button {
+  border: none;
+  cursor: pointer;
+}
+
+.ToggleItem button svg {
+  color: var(--app-color-dark);
+}

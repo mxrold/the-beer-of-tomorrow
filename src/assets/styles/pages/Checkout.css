@@ -1,0 +1,20 @@
+.Checkout__container { }
+
+.Checkout__container--total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.Checkout__container--total-text {
+  display: flex;
+  align-items: center;
+}
+
+.Checkout__container--total-text p {
+  margin-left: 13px;
+  font-size: var(--lg);
+  font-weight: 500;
+  color: var(--text-medium);
+}
